@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <style>
+        @media (max-width:436px){
+            .navbar,.navbar-pays{
+                flex-wrap: wrap;
+            }
+            .recharge-bills-container,.build, .cards-insurance-container{
+                flex-direction: column;
+            }
+            .recharges{
+                width: 100%;
+            }
+            .build>img{
+                width: 100%;
+                margin-top: 10%;
+            }
+            .left-block{
+                width: 100% !important;
+            }
+            .cards-insurance-container>*{
+                width: 100% !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-pays">
+            <a href="">
+                <img src="https://pwebassets.paytm.com/commonwebassets/paytmweb/header/images/logo_new.svg"
+                    alt="paytm_logo" />
+            </a>
+            <select>
+                <option value="ticket booking">Ticket Booking</option>
+                <option value="booking">booking</option>
+            </select>
+            <select>
+                <option value="recharge and bills">Recharge & Bills</option>
+                <option value="booking">booking</option>
+            </select>
+            <select>
+                <option value="Payments & services">Payments & services</option>
+                <option value="booking">booking</option>
+            </select>
+            <select>
+                <option value="Payment for business">Payment for business</option>
+                <option value="booking">booking</option>
+            </select>
+            <select>
+                <option value="Company">Company</option>
+                <option value="booking">booking</option>
+            </select>
+        </div>
+        <div>
+            <a class="download" href="">
+                <i class="fa-solid fa-download"></i> Download App
+            </a>
+            <a href="" class="signin">
+                <i class="fa-solid fa-user"></i>Sign In
+            </a>
+        </div>
+    </nav>
+
+    <section class="payments-container">
+        <div class="recharge-bills-container">
+            <div class="recharges">
+                <h3>Recharges</h3>
+                <div class="recharge-links">
+                    <div>
+                        <img src="https://assetscdn1.paytm.com/images/catalog/view_item/2839929/1725624139422.png"
+                            alt="mobile" />
+                        <p>Mobile Recharge</p>
+                    </div>
+                    <div>
+                        <img src="https://assetscdn1.paytm.com/images/catalog/view_item/2839930/1725624172567.png"
+                            alt="dth">
+                        <p>DTH Recharge</p>
+                    </div>
+                    <div>
+                        <img src="https://assetscdn1.paytm.com/images/catalog/view_item/2839931/1725624207849.png"
+                            alt="fastag" />
+                        <p> FasTag Recharge</p>
+                    </div>
+                    <div>
+                        <img src="https://assetscdn1.paytm.com/images/catalog/view_item/2839932/1725624245350.png"
+                            alt="view all" />
+                        <p> View All Products</p>
+                    </div>
+                </div>
+                <img class="recharge-footer" src="https://assetscdn1.paytm.com/images/catalog/view/1732260479349.png"
+                    alt="recharge-footer" />
+            </div>
+            <div class="recharges">
+                <h3>Bill Payments</h3>
+                <div class="recharge-links">
+                    <div>
+                        <img src="https://assetscdn1.paytm.com/images/catalog/view_item/2839933/1725624373019.png"
+                            alt="credit" />
+                        <p> Credit Card payments</p>
+                    </div>
+                    <div>
+                        <img src="https://assetscdn1.paytm.com/images/catalog/view_item/2839934/1725624413059.png"
+                            alt="electricity">
+                        <p>Electricity Bill</p>
+                    </div>
+                    <div>
+                        <img src="https://assetscdn1.paytm.com/images/catalog/view_item/2839935/1725624449393.png"
+                            alt="broad" />
+                        <p>Broadband bill</p>
+                    </div>
+                    <div>
+                        <img src="https://assetscdn1.paytm.com/images/catalog/view_item/2839932/1725624245350.png"
+                            alt="view all" />
+                        <p>View All Products</p>
+                    </div>
+                </div>
+                <img class="recharge-footer" src="https://assetscdn1.paytm.com/images/catalog/view/1732260510732.png"
+                    alt="bill-footer" />
+            </div>
+        </div>
+        <div class="build">
+            <div class="left-block">
+                <img src="https://assetscdn1.paytm.com/images/catalog/view/308774/1617696247991.png"
+                    alt="paytmmoney-build" />
+                <h1>Build Long-term Wealth & Achieve your Goals.</h1>
+                <p>Investing on Paytm Money is transparent, low-cost and commission-free. Buy stocks & mutual funds that
+                    can help you create wealth & realise your dreams.</p>
+                <a href="">
+                    Learn More
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </a>
+            </div>
+            <img src="https://assetscdn1.paytm.com/images/catalog/view/1725446620368.png" alt="paytm-money" />
+        </div>
+        <div class="cards-insurance-container">
+            <div class="cards-left-block">
+                <img src="./images/1.png" alt="" />
+                <h1>One destination for <br /> Credit Cards</h1>
+                <p>Paytm HDFC, SBI Card & Axis Bank Credit Card with assured Cashback and incredible offers.</p>
+                <div class="apply-container">
+                    <a class="apply-now" href="">Apply Now <i class="fa-solid fa-arrow-right-long"></i></a>
+                    <img width="40%" src="./images/2.avif" alt="" />
+                </div>
+                <div class="cards-footer">
+                    <img src="./images/3.avif" alt="" />
+                </div>
+            </div>
+            <div class="insurance-right-block">
+                <img src="./images/4.png" alt="" />
+                <h1>Insurance made easy.</h1>
+                <p>Buying insurance does not have to be tedious, time-consuming & confusing. Paytm Insurance removes the
+                    worry of getting insured by making it simple, convenient & easy-to-understand.</p>
+                <div>
+                    <a class="apply-now" href="">Get it Now
+                        <i class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+                <div class="cards-footer">
+                    <img src="./images/5.avif" alt="" />
+                </div>
+
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
