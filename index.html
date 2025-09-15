@@ -16,11 +16,6 @@
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-  <!-- Your original HTML content remains unchanged -->
-</body>
-</html>
-
-<body>
     <nav class="navbar">
         <div class="navbar-pays">
             <a href="">
@@ -158,6 +153,51 @@
             </div>
         </div>
     </section>
-</body>
+  <script>
+  // Log dropdown selections
+  document.querySelectorAll('.navbar select').forEach(select => {
+    select.addEventListener('change', (e) => {
+      console.log(`Selected: ${e.target.value}`);
+    });
+  });
 
+  // Download App button functionality
+  document.querySelector('.download').addEventListener('click', (e) => {
+    e.preventDefault();
+    alert('Redirecting to app download...');
+    // You can add actual redirection here
+  });
+
+  // Sign In button functionality
+  document.querySelector('.signin').addEventListener('click', (e) => {
+    e.preventDefault();
+    const modal = document.createElement('div');
+    modal.innerHTML = `
+      <div style="
+        position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+        background: rgba(0,0,0,0.5); display: flex; justify-content: center; align-items: center;
+        z-index: 1000;">
+        <div style="
+          background: white; padding: 20px; border-radius: 10px; width: 300px; text-align: center;">
+          <h3>Sign In</h3>
+          <input type="text" placeholder="Username" style="width: 90%; margin-bottom: 10px;" /><br />
+          <input type="password" placeholder="Password" style="width: 90%; margin-bottom: 20px;" /><br />
+          <button onclick="this.closest('div').parentNode.remove()">Close</button>
+        </div>
+      </div>
+    `;
+    document.body.appendChild(modal);
+  });
+
+  // Recharge link hover effect
+  document.querySelectorAll('.recharge-links div').forEach(item => {
+    item.addEventListener('mouseenter', () => {
+      item.style.backgroundColor = '#f0f8ff';
+    });
+    item.addEventListener('mouseleave', () => {
+      item.style.backgroundColor = 'transparent';
+    });
+  });
+</script>
+</body>
 </html>
